@@ -581,8 +581,8 @@ app.get("/", function (req, res) {
 });
 app.listen(5000, () =>
   console.log(
-    "Server is running on Port 5000, visit http://localhost:5000/ or http://127.0.0.1:5000 to access your website"
-  )
+    "Server is running on Port 5000, visit http://localhost:5000/ or http://127.0.0.1:5000 to access your website",
+  ),
 );
 ```
 
@@ -930,7 +930,9 @@ code style.css
   flex-direction: column;
   width: 17rem;
   background: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
   margin: auto;
   overflow: hidden;
@@ -1176,7 +1178,7 @@ self.addEventListener("install", (installEvt) => {
       .then(self.skipWaiting())
       .catch((e) => {
         console.log(e);
-      })
+      }),
   );
 });
 
@@ -1191,10 +1193,10 @@ self.addEventListener("activate", function (evt) {
               console.log("Removed old cache from", key);
               return caches.delete(key);
             }
-          })
+          }),
         );
       })
-      .then(() => self.clients.claim())
+      .then(() => self.clients.claim()),
   );
 });
 
@@ -1204,7 +1206,7 @@ self.addEventListener("fetch", function (evt) {
       return caches.open(CATALOGUE_ASSETS).then((cache) => {
         return cache.match(evt.request);
       });
-    })
+    }),
   );
 });
 ```
@@ -1288,10 +1290,8 @@ The following code snippets will help you create a simple form on the add.html p
    - The input form must be styled to be consistent with the rest of the website
    - A message confirming submission is returned to the user
 2. SQL schema specifications:
-
    - A new table called contact_list
    - 3 columns
-
      - `id` - Primary key that increments automatically (SQLite handles this)
      - `email` - User's email address (must be unique to prevent duplicates)
      - `name` - User's display name
@@ -1356,7 +1356,7 @@ app.post("/add.html", function (req, res) {
           // Handle duplicate email error
           if (err.message.includes("UNIQUE constraint failed")) {
             return res.send(
-              "This email is already registered in our distribution list."
+              "This email is already registered in our distribution list.",
             );
           }
           return console.log(err.message);
@@ -1366,9 +1366,9 @@ app.post("/add.html", function (req, res) {
             req.body.name +
             ", we have added your email " +
             req.body.email +
-            " to our distribution list."
+            " to our distribution list.",
         );
-      }
+      },
     );
   });
 });
@@ -1440,7 +1440,9 @@ Style form controls to match your site design:
   padding: 2rem;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
 }
 ```
 
