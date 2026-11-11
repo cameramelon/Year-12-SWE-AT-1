@@ -10,6 +10,12 @@ body {
     background: #fdfdfd;
     font-family: "Quantico", sans-serif;
     font-size: 1rem;
+
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 main {
     max-width: 900px;
@@ -48,7 +54,7 @@ nav h1 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 1rem;
     justify-content: center;
     align-items: center;
@@ -59,8 +65,8 @@ nav h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 17rem;
-    background: #fff;
+    width: 25rem;
+    background: #e4e4e4;
     box-shadow:
         0 10px 20px rgba(0, 0, 0, 0.19),
         0 6px 6px rgba(0, 0, 0, 0.23);
@@ -69,9 +75,11 @@ nav h1 {
     overflow: hidden;
 }
 .card-image {
-    width: 100%;
+    width: 90%;
+    margin: 1.5rem;
     height: 15rem;
     object-fit: cover;
+    border: 2px solid #000;
 }
 .card-name {
     color: #222;
@@ -81,10 +89,10 @@ nav h1 {
     margin-top: 0.5rem;
 }
 .card-about {
-    /* text-overflow: ellipsis; */
     overflow-wrap: break-word;
-    width: 15rem;
     flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
 }
 .btn {

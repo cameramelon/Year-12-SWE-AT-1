@@ -3,31 +3,31 @@
 "extID":1,
 "name":"Bloondle",
 "hyperlink":"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer",
-"about":"Complete a series of Bloons-related daily puzzles!",
-"image":"https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1736542717282/Microsoft.VisualStudio.Services.Icons.Default",
+"about":"Complete a series of Bloons-related daily puzzles! Guess monkeys, rounds, and maps!",
+"image":"../images/bloondle.png",
 "language":"HTML CSS JS"
 },
 {
 "extID":2,
 "name":"The Upgrade Quiz",
 "hyperlink":"https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf",
-"about":"Can you name every monkey upgrade?",
-"image":"https://medo64.gallerycdn.vsassets.io/extensions/medo64/render-crlf/1.7.1/1689315206970/Microsoft.VisualStudio.Services.Icons.Default",
+"about":"Can you name every monkey upgrade in the game? Test yourself!",
+"image":"../images/upgradequiz.png",
 "language":"#BASH"
 },
 {
 "extID":3,
 "name":"CHIMPS Guides",
 "hyperlink":"https://marketplace.visualstudio.com/items?itemName=McCarter.start-git-bash",
-"about":"Find handy guides to CHIMPS for the hardest maps.",
-"image":"https://mccarter.gallerycdn.vsassets.io/extensions/mccarter/start-git-bash/1.2.1/1499505567572/Microsoft.VisualStudio.Services.Icons.Default",
+"about":"Find handy guides to CHIMPS for the hardest maps in the game.",
+"image":"../images/chimpsguides.png",
 "language":"#BASH"
 },
 {
 "extID":4,
 "name":"Income Calculator",
 "hyperlink":"https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor",
-"about":"Calculate the income you will earn in a standard game.",
+"about":"Calculate the income you will earn in a standard game on any difficulty.",
 "image":"https://yy0931.gallerycdn.vsassets.io/extensions/yy0931/vscode-sqlite3-editor/1.0.85/1690893830873/Microsoft.VisualStudio.Services.Icons.Default",
 "language":"SQL"
 }
