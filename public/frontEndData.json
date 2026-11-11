@@ -2,7 +2,7 @@
 {
 "extID":1,
 "name":"Bloondle",
-"hyperlink":"https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer",
+"hyperlink":"html/bloondle.html",
 "about":"Complete a series of Bloons-related daily puzzles! Guess monkeys, rounds, and maps!",
 "image":"../images/bloondle.png",
 "language":"HTML CSS JS"
@@ -10,7 +10,7 @@
 {
 "extID":2,
 "name":"The Upgrade Quiz",
-"hyperlink":"https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf",
+"hyperlink":"html/upgradequiz.html",
 "about":"Can you name every monkey upgrade in the game? Test yourself!",
 "image":"../images/upgradequiz.png",
 "language":"#BASH"
@@ -18,7 +18,7 @@
 {
 "extID":3,
 "name":"CHIMPS Guides",
-"hyperlink":"https://marketplace.visualstudio.com/items?itemName=McCarter.start-git-bash",
+"hyperlink":"html/chimpsguides.html",
 "about":"Find handy guides to CHIMPS for the hardest maps in the game.",
 "image":"../images/chimpsguides.png",
 "language":"#BASH"
@@ -26,7 +26,7 @@
 {
 "extID":4,
 "name":"Income Calculator",
-"hyperlink":"https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor",
+"hyperlink":"html/calculator.html",
 "about":"Calculate the income you will earn in a standard game on any difficulty.",
 "image":"https://yy0931.gallerycdn.vsassets.io/extensions/yy0931/vscode-sqlite3-editor/1.0.85/1690893830873/Microsoft.VisualStudio.Services.Icons.Default",
 "language":"SQL"
