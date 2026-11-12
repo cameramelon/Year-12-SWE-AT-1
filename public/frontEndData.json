@@ -5,7 +5,9 @@
 "hyperlink":"html/bloondle.html",
 "about":"Complete a series of Bloons-related daily puzzles! Guess monkeys, rounds, and maps!",
 "image":"../images/bloondle.png",
-"language":"HTML CSS JS"
+"language":"HTML CSS JS",
+"alt":"Bloondle Icon",
+"buttontext":"Play"
 },
 {
 "extID":2,
@@ -13,7 +15,9 @@
 "hyperlink":"html/upgradequiz.html",
 "about":"Can you name every monkey upgrade in the game? Test yourself!",
 "image":"../images/upgradequiz.png",
-"language":"#BASH"
+"language":"#BASH",
+"alt":"Upgrade Quiz Icon",
+"buttontext":"cocaine"
 },
 {
 "extID":3,
@@ -21,7 +25,9 @@
 "hyperlink":"html/chimpsguides.html",
 "about":"Find handy guides to CHIMPS for the hardest maps in the game.",
 "image":"../images/chimpsguides.png",
-"language":"#BASH"
+"language":"#BASH",
+"alt":"CHIMPS Guides Icon",
+"buttontext":"View"
 },
 {
 "extID":4,
@@ -29,6 +35,8 @@
 "hyperlink":"html/calculator.html",
 "about":"Calculate the income you will earn in a standard game on any difficulty.",
 "image":"https://yy0931.gallerycdn.vsassets.io/extensions/yy0931/vscode-sqlite3-editor/1.0.85/1690893830873/Microsoft.VisualStudio.Services.Icons.Default",
-"language":"SQL"
+"language":"SQL",
+"alt":"Calculator Icon",
+"buttontext":"Open"
 }
 ]

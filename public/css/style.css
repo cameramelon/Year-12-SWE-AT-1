@@ -25,31 +25,16 @@ main {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
-nav img {
-    height: 100px;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-}
-nav li {
-    margin-right: 1rem;
-}
-nav ul li a {
-    text-decoration-line: none;
-    text-transform: uppercase;
-    color: #393b45;
-}
-nav ul li a:hover {
-    color: #14e6dd;
-}
+
 nav h1 {
-    color: #106d69;
-    margin-bottom: 0.5rem;
+    color: #68646e;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .container {

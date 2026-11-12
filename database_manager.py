@@ -9,7 +9,7 @@ f.write("[\n")
 for row in data:
     f.write("{\n")
     f.write(
-        f'"extID":{row[0]},\n"name":"{row[1]}",\n"hyperlink":"{row[2]}",\n"about":"{row[3]}",\n"image":"{row[4]}",\n"language":"{row[5]}"\n'
+        f'"extID":{row[0]},\n"name":"{row[1]}",\n"hyperlink":"{row[2]}",\n"about":"{row[3]}",\n"image":"{row[4]}",\n"language":"{row[5]}",\n"alt":"{row[6]}",\n"buttontext":"{row[7]}"\n'
     )
     if row == data[len(data) - 1]:
         f.write("}\n")
