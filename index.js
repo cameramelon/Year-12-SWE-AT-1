@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "public/index.html"));
+    res.sendFile(path.join(__dirname, "public/html/index.html"));
 });
 app.listen(5000, () =>
     console.log(
@@ -22,7 +22,7 @@ const sqlite3 = require("sqlite3").verbose();
 const db = new sqlite3.Database("database/data_source.db");
 
 let myString = "[\n";
-db.all("SELECT * FROM extension", function (err, rows) {
+db.all("SELECT * FROM cards", function (err, rows) {
     let myCounter = 0;
     rows.forEach(function (row) {
         // for debugging
@@ -51,7 +51,7 @@ db.all("SELECT * FROM extension", function (err, rows) {
 
     // console.log(myString);
     var fs = require("fs");
-    fs.writeFile("public/frontEndData.json", myString + "]", function (err) {
+    fs.writeFile("public/json/cardData.json", myString + "]", function (err) {
         if (err) {
             console.log(err);
         }

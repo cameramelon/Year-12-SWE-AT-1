@@ -1,5 +1,5 @@
 let result = "";
-fetch("./frontEndData.json")
+fetch("../json/cardData.json")
     .then(function (response) {
         return response.json();
     })
@@ -36,7 +36,7 @@ function appendData(data) {
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function () {
         navigator.serviceWorker
-            .register("js/serviceworker.js")
+            .register("../js/serviceworker.js")
             .then((res) => console.log("service worker registered"))
             .catch((err) => console.log("service worker not registered", err));
     });

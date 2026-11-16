@@ -37,6 +37,12 @@ nav h1 {
         0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
