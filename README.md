@@ -84,8 +84,8 @@ Make sure you open a new terminal with the keys <kbd>Ctrl</kbd> + <kbd>`</kbd> a
 ![Screen capture of the menu options for terminals](/docs/README_resources/git_bash_shell.png "Choose Git Bash from the list")
 
 2. Get the working files, which include this README.md
-   - Open a new window in VSCode
-   - Choose your working directory
+    - Open a new window in VSCode
+    - Choose your working directory
 
 ```bash
 git clone https://github.com/TempeHS/NodeJS_PWA_Programming_For_The_Web_Task_Template.git
@@ -358,10 +358,10 @@ sqlite3 data_source.db "SELECT COUNT(*) FROM extension;"
 3. Web optimise the images using [TinyPNG](https://tinypng.com/).
 4. Save the files into the public/images folder.
 5. Rename the 512x512 icon to icon-512x512.png, then resize and rename it as follows:
-   - icon-128x128.png
-   - icon-192x192.png
-   - icon-384x384.png
-   - icon-512x512.png
+    - icon-128x128.png
+    - icon-192x192.png
+    - icon-384x384.png
+    - icon-512x512.png
 6. Web optimise the images using [TinyPNG](https://tinypng.com/)
 7. Save the optimised icons to public/icons
 8. Save the optimised logo and favicon to public/images
@@ -403,25 +403,28 @@ code index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>VSCode Extension Catalogue</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-  </head>
-  <body>
-    <main>
-      <!-- NAV START -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="script-src 'self';"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>VSCode Extension Catalogue</title>
+        <link rel="manifest" href="manifest.json" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    </head>
+    <body>
+        <main>
+            <!-- NAV START -->
 
-      <!-- NAV END -->
-      <div class="container"></div>
-    </main>
-    <script src="js/app.js"></script>
-  </body>
+            <!-- NAV END -->
+            <div class="container"></div>
+        </main>
+        <script src="js/app.js"></script>
+    </body>
 </html>
 ```
 
@@ -447,20 +450,20 @@ code style.css
 ```css
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-  background: #fdfdfd;
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
+    background: #fdfdfd;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
 }
 main {
-  max-width: 900px;
-  margin: auto;
-  padding: 0.5rem;
-  text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
 }
 ```
 
@@ -484,13 +487,13 @@ code index.html
 
 ```html
 <nav>
-  <img src="images\logo.png" alt="VSCode Extensions site logo." />
-  <h1>VSCode Extensions</h1>
-  <ul class="topnav">
-    <li><a href="#">Home</a></li>
-    <li><a href="add.html">Add me</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
+    <img src="images\logo.png" alt="VSCode Extensions site logo." />
+    <h1>VSCode Extensions</h1>
+    <ul class="topnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="add.html">Add me</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
 </nav>
 ```
 
@@ -511,31 +514,31 @@ code style.css
 
 ```css
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav img {
-  height: 100px;
+    height: 100px;
 }
 nav ul {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
 }
 nav li {
-  margin-right: 1rem;
+    margin-right: 1rem;
 }
 nav ul li a {
-  text-decoration-line: none;
-  text-transform: uppercase;
-  color: #393b45;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    color: #393b45;
 }
 nav ul li a:hover {
-  color: #14e6dd;
+    color: #14e6dd;
 }
 nav h1 {
-  color: #106d69;
-  margin-bottom: 0.5rem;
+    color: #106d69;
+    margin-bottom: 0.5rem;
 }
 ```
 
@@ -577,12 +580,12 @@ const app = express();
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "public/index.html"));
+    res.sendFile(path.join(__dirname, "public/index.html"));
 });
 app.listen(5000, () =>
-  console.log(
-    "Server is running on Port 5000, visit http://localhost:5000/ or http://127.0.0.1:5000 to access your website",
-  ),
+    console.log(
+        "Server is running on Port 5000, visit http://localhost:5000/ or http://127.0.0.1:5000 to access your website",
+    ),
 );
 ```
 
@@ -788,39 +791,39 @@ const db = new sqlite3.Database("database/data_source.db");
 
 let myString = "[\n";
 db.all("SELECT * FROM extension", function (err, rows) {
-  let myCounter = 0;
-  rows.forEach(function (row) {
-    // for debugging
-    // console.log(row.extID + ": " + row.name + ": " + row.hyperlink + ": " + row.about + ": " + row.image + ": " + row.language);
-    myString =
-      myString +
-      '{\n"extID":' +
-      row.extID +
-      ',\n"name":"' +
-      row.name +
-      '",\n"hyperlink":"' +
-      row.hyperlink +
-      '",\n"about":"' +
-      row.about +
-      '",\n"image":"' +
-      row.image +
-      '",\n"language":"' +
-      row.language;
-    myCounter++;
-    if (myCounter == rows.length) {
-      myString = myString + '"\n}\n';
-    } else {
-      myString = myString + '"\n},\n';
-    }
-  });
+    let myCounter = 0;
+    rows.forEach(function (row) {
+        // for debugging
+        // console.log(row.extID + ": " + row.name + ": " + row.hyperlink + ": " + row.about + ": " + row.image + ": " + row.language);
+        myString =
+            myString +
+            '{\n"extID":' +
+            row.extID +
+            ',\n"name":"' +
+            row.name +
+            '",\n"hyperlink":"' +
+            row.hyperlink +
+            '",\n"about":"' +
+            row.about +
+            '",\n"image":"' +
+            row.image +
+            '",\n"language":"' +
+            row.language;
+        myCounter++;
+        if (myCounter == rows.length) {
+            myString = myString + '"\n}\n';
+        } else {
+            myString = myString + '"\n},\n';
+        }
+    });
 
-  // console.log(myString);
-  var fs = require("fs");
-  fs.writeFile("public/frontEndData.json", myString + "]", function (err) {
-    if (err) {
-      console.log(err);
-    }
-  });
+    // console.log(myString);
+    var fs = require("fs");
+    fs.writeFile("public/frontEndData.json", myString + "]", function (err) {
+        if (err) {
+            console.log(err);
+        }
+    });
 });
 ```
 
@@ -873,18 +876,18 @@ code app.js
 ```js
 let result = "";
 fetch("./frontEndData.json")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    appendData(data);
-  })
-  .catch(function (err) {
-    console.log("error: " + err);
-  });
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log("error: " + err);
+    });
 function appendData(data) {
-  data.forEach(({ name, image, hyperlink, about, language } = rows) => {
-    result += `
+    data.forEach(({ name, image, hyperlink, about, language } = rows) => {
+        result += `
         <div class="card">
         <img class="card-image" src="${image}" alt="Product image for the ${name} VSCode extension."/>
         <h1 class="card-name">${name}</h1>
@@ -892,8 +895,8 @@ function appendData(data) {
         <a class="card-link" href="${hyperlink}"><button class="btn">Read More</button></a>
         </div>
         `;
-  });
-  document.querySelector(".container").innerHTML = result;
+    });
+    document.querySelector(".container").innerHTML = result;
 }
 ```
 
@@ -906,9 +909,9 @@ code style.css
 
 - `display: grid` - Creates a grid layout system
 - `repeat(auto-fit, minmax(15rem, 1fr))` - Automatically creates columns that:
-  - Are at least 15rem wide
-  - Expand to fill space equally (1fr)
-  - Wrap to new rows when needed
+    - Are at least 15rem wide
+    - Expand to fill space equally (1fr)
+    - Wrap to new rows when needed
 - `grid-gap` - Space between grid items
 - `box-shadow` - Creates depth effect with shadows
 
@@ -916,70 +919,70 @@ code style.css
 
 ```css
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 0;
 }
 .card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 17rem;
-  background: #fff;
-  box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 10px;
-  margin: auto;
-  overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 17rem;
+    background: #fff;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
 }
 .card-image {
-  width: 100%;
-  height: 15rem;
-  object-fit: cover;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
 }
 .card-name {
-  color: #222;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+    color: #222;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
 }
 .card-about {
-  text-overflow: ellipsis;
-  width: 15rem;
-  white-space: nowrap;
-  overflow: hidden;
-  margin-bottom: 1rem;
+    text-overflow: ellipsis;
+    width: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 .btn {
-  border: none;
-  background: none;
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px rgba(21, 21, 21, 0.1);
-  cursor: pointer;
-  font-size: 1.25rem;
-  margin: 0 1rem;
-  padding: 0.25rem 2rem;
-  transition: all 0.25s ease-in-out;
-  background: hsl(110, 21%, 93%);
-  color: hsl(141, 100%, 22%);
-  margin-bottom: 1rem;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(21, 21, 21, 0.1);
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin: 0 1rem;
+    padding: 0.25rem 2rem;
+    transition: all 0.25s ease-in-out;
+    background: hsl(110, 21%, 93%);
+    color: hsl(141, 100%, 22%);
+    margin-bottom: 1rem;
 }
 .btn:focus,
 .btn:hover {
-  box-shadow: 1px 1px 2px rgba(21, 21, 21, 0.2);
-  background: hsl(111, 21%, 86%);
+    box-shadow: 1px 1px 2px rgba(21, 21, 21, 0.2);
+    background: hsl(111, 21%, 86%);
 }
 .about-container {
-  font-size: 1.25rem;
-  margin-top: 2rem;
-  text-align: justify;
-  text-justify: inter-word;
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 ```
 
@@ -1026,78 +1029,78 @@ code manifest.json
 
 ```json
 {
-  "name": "VSCode Extension Catalogue",
-  "short_name": "vscodeextcat",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#14E6DD",
-  "orientation": "landscape-primary",
-  "icons": [
-    {
-      "src": "icons/icon-128x128.png",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-128x128.png",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-384x384.png",
-      "type": "image/png",
-      "sizes": "384x384",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-384x384.png",
-      "type": "image/png",
-      "sizes": "384x384",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "icons/desktop_screenshot.png",
-      "sizes": "1920x1080",
-      "type": "image/png",
-      "label": ""
-    },
-    {
-      "src": "icons/mobile_screenshot.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": ""
-    }
-  ]
+    "name": "VSCode Extension Catalogue",
+    "short_name": "vscodeextcat",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#14E6DD",
+    "orientation": "landscape-primary",
+    "icons": [
+        {
+            "src": "icons/icon-128x128.png",
+            "type": "image/png",
+            "sizes": "128x128",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon-128x128.png",
+            "type": "image/png",
+            "sizes": "128x128",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-384x384.png",
+            "type": "image/png",
+            "sizes": "384x384",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon-384x384.png",
+            "type": "image/png",
+            "sizes": "384x384",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "icons/desktop_screenshot.png",
+            "sizes": "1920x1080",
+            "type": "image/png",
+            "label": ""
+        },
+        {
+            "src": "icons/mobile_screenshot.png",
+            "sizes": "1080x1920",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": ""
+        }
+    ]
 }
 ```
 
@@ -1118,12 +1121,12 @@ code app.js
 
 ```js
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function () {
-    navigator.serviceWorker
-      .register("js/serviceworker.js")
-      .then((res) => console.log("service worker registered"))
-      .catch((err) => console.log("service worker not registered", err));
-  });
+    window.addEventListener("load", function () {
+        navigator.serviceWorker
+            .register("js/serviceworker.js")
+            .then((res) => console.log("service worker registered"))
+            .catch((err) => console.log("service worker not registered", err));
+    });
 }
 ```
 
@@ -1152,62 +1155,62 @@ code serviceworker.js
 
 ```js
 const assets = [
-  "./",
-  "css/style.css",
-  "js/app.js",
-  "images/logo.png",
-  "images/favicon.png",
-  "icons/icon-128x128.png",
-  "icons/icon-192x192.png",
-  "icons/icon-384x384.png",
-  "icons/icon-512x512.png",
-  "icons/desktop_screenshot.png",
-  "icons/mobile_screenshot.png",
+    "./",
+    "css/style.css",
+    "js/app.js",
+    "images/logo.png",
+    "images/favicon.png",
+    "icons/icon-128x128.png",
+    "icons/icon-192x192.png",
+    "icons/icon-384x384.png",
+    "icons/icon-512x512.png",
+    "icons/desktop_screenshot.png",
+    "icons/mobile_screenshot.png",
 ];
 
 const CATALOGUE_ASSETS = "catalogue-assets";
 
 self.addEventListener("install", (installEvt) => {
-  installEvt.waitUntil(
-    caches
-      .open(CATALOGUE_ASSETS)
-      .then((cache) => {
-        console.log(cache);
-        cache.addAll(assets);
-      })
-      .then(self.skipWaiting())
-      .catch((e) => {
-        console.log(e);
-      }),
-  );
+    installEvt.waitUntil(
+        caches
+            .open(CATALOGUE_ASSETS)
+            .then((cache) => {
+                console.log(cache);
+                cache.addAll(assets);
+            })
+            .then(self.skipWaiting())
+            .catch((e) => {
+                console.log(e);
+            }),
+    );
 });
 
 self.addEventListener("activate", function (evt) {
-  evt.waitUntil(
-    caches
-      .keys()
-      .then((keyList) => {
-        return Promise.all(
-          keyList.map((key) => {
-            if (key === CATALOGUE_ASSETS) {
-              console.log("Removed old cache from", key);
-              return caches.delete(key);
-            }
-          }),
-        );
-      })
-      .then(() => self.clients.claim()),
-  );
+    evt.waitUntil(
+        caches
+            .keys()
+            .then((keyList) => {
+                return Promise.all(
+                    keyList.map((key) => {
+                        if (key === CATALOGUE_ASSETS) {
+                            console.log("Removed old cache from", key);
+                            return caches.delete(key);
+                        }
+                    }),
+                );
+            })
+            .then(() => self.clients.claim()),
+    );
 });
 
 self.addEventListener("fetch", function (evt) {
-  evt.respondWith(
-    fetch(evt.request).catch(() => {
-      return caches.open(CATALOGUE_ASSETS).then((cache) => {
-        return cache.match(evt.request);
-      });
-    }),
-  );
+    evt.respondWith(
+        fetch(evt.request).catch(() => {
+            return caches.open(CATALOGUE_ASSETS).then((cache) => {
+                return cache.match(evt.request);
+            });
+        }),
+    );
 });
 ```
 
@@ -1285,16 +1288,16 @@ The following code snippets will help you create a simple form on the add.html p
 ![Screen capture of the finished PWA](/docs/README_resources/form_example.png "This is what your application will look like")
 
 1. Page specifications:
-   - Simple form where the user inserts their name and email address
-   - When they click submit, the database is updated
-   - The input form must be styled to be consistent with the rest of the website
-   - A message confirming submission is returned to the user
+    - Simple form where the user inserts their name and email address
+    - When they click submit, the database is updated
+    - The input form must be styled to be consistent with the rest of the website
+    - A message confirming submission is returned to the user
 2. SQL schema specifications:
-   - A new table called contact_list
-   - 3 columns
-     - `id` - Primary key that increments automatically (SQLite handles this)
-     - `email` - User's email address (must be unique to prevent duplicates)
-     - `name` - User's display name
+    - A new table called contact_list
+    - 3 columns
+        - `id` - Primary key that increments automatically (SQLite handles this)
+        - `email` - User's email address (must be unique to prevent duplicates)
+        - `name` - User's display name
 
 **Understanding the Contact Form SQL:**
 
@@ -1330,7 +1333,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 ```js
 // Add this route to serve the add.html page
 app.get("/add.html", function (req, res) {
-  res.sendFile(path.join(__dirname, "public/add.html"));
+    res.sendFile(path.join(__dirname, "public/add.html"));
 });
 ```
 
@@ -1347,30 +1350,30 @@ When form is submitted:
 
 ```js
 app.post("/add.html", function (req, res) {
-  db.serialize(() => {
-    db.run(
-      "INSERT INTO contact_list(email,name) VALUES(?,?)",
-      [req.body.email, req.body.name],
-      function (err) {
-        if (err) {
-          // Handle duplicate email error
-          if (err.message.includes("UNIQUE constraint failed")) {
-            return res.send(
-              "This email is already registered in our distribution list.",
-            );
-          }
-          return console.log(err.message);
-        }
-        res.send(
-          "Thank you " +
-            req.body.name +
-            ", we have added your email " +
-            req.body.email +
-            " to our distribution list.",
+    db.serialize(() => {
+        db.run(
+            "INSERT INTO contact_list(email,name) VALUES(?,?)",
+            [req.body.email, req.body.name],
+            function (err) {
+                if (err) {
+                    // Handle duplicate email error
+                    if (err.message.includes("UNIQUE constraint failed")) {
+                        return res.send(
+                            "This email is already registered in our distribution list.",
+                        );
+                    }
+                    return console.log(err.message);
+                }
+                res.send(
+                    "Thank you " +
+                        req.body.name +
+                        ", we have added your email " +
+                        req.body.email +
+                        " to our distribution list.",
+                );
+            },
         );
-      },
-    );
-  });
+    });
 });
 ```
 
@@ -1385,32 +1388,32 @@ app.post("/add.html", function (req, res) {
 
 ```html
 <form action="/add.html" method="POST" class="box">
-  <div>
-    <label class="form-label">Email address</label>
-    <input
-      name="email"
-      type="email"
-      class="form-control"
-      id="email"
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-      placeholder="name@example.com"
-      required
-    />
-  </div>
-  <div>
-    <label class="form-label">Name</label>
-    <textarea
-      class="form-control"
-      name="name"
-      id="name"
-      rows="1"
-      required
-    ></textarea>
-  </div>
-  <br />
-  <div>
-    <button type="submit" class="btn">Submit</button>
-  </div>
+    <div>
+        <label class="form-label">Email address</label>
+        <input
+            name="email"
+            type="email"
+            class="form-control"
+            id="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="name@example.com"
+            required
+        />
+    </div>
+    <div>
+        <label class="form-label">Name</label>
+        <textarea
+            class="form-control"
+            name="name"
+            id="name"
+            rows="1"
+            required
+        ></textarea>
+    </div>
+    <br />
+    <div>
+        <button type="submit" class="btn">Submit</button>
+    </div>
 </form>
 ```
 
@@ -1419,30 +1422,30 @@ Style form controls to match your site design:
 
 ```css
 .form-control {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
 }
 
 .form-label {
-  display: block;
-  margin-bottom: 0.25rem;
-  font-weight: 700;
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
 }
 
 .box {
-  max-width: 500px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.19),
-    0 6px 6px rgba(0, 0, 0, 0.23);
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
 }
 ```
 
@@ -1584,13 +1587,13 @@ sqlite3 database/data_source.db ".tables"
 ```js
 // Add error handling in your route:
 db.run("INSERT INTO ...", [values], function (err) {
-  if (err) {
-    if (err.message.includes("UNIQUE constraint")) {
-      return res.send("Email already exists");
+    if (err) {
+        if (err.message.includes("UNIQUE constraint")) {
+            return res.send("Email already exists");
+        }
+        return res.send("Database error: " + err.message);
     }
-    return res.send("Database error: " + err.message);
-  }
-  // Success code here
+    // Success code here
 });
 ```
 
@@ -1647,9 +1650,9 @@ cat public/frontEndData.json
 ```js
 // In browser console:
 navigator.serviceWorker.getRegistrations().then(function (registrations) {
-  for (let registration of registrations) {
-    registration.unregister();
-  }
+    for (let registration of registrations) {
+        registration.unregister();
+    }
 });
 ```
 
@@ -1659,11 +1662,11 @@ navigator.serviceWorker.getRegistrations().then(function (registrations) {
 
 1. Validate manifest.json at jsonlint.com
 2. Check all required manifest fields present:
-   - name
-   - short_name
-   - start_url
-   - display
-   - icons
+    - name
+    - short_name
+    - start_url
+    - display
+    - icons
 3. Ensure icons exist in specified paths
 4. Must use HTTPS or localhost
 5. Run Lighthouse PWA audit for detailed issues
@@ -1812,16 +1815,16 @@ If you're still stuck after trying these solutions:
 
 1. **Read the error message carefully** - It often tells you exactly what's wrong
 2. **Use browser DevTools (F12)**:
-   - Console tab for JavaScript errors
-   - Network tab for file loading issues
-   - Application tab for PWA/service worker issues
+    - Console tab for JavaScript errors
+    - Network tab for file loading issues
+    - Application tab for PWA/service worker issues
 3. **Check your code** - Compare with the tutorial examples
 4. **Search the error** - Copy exact error message into Google
 5. **Ask for help** - Provide:
-   - Exact error message
-   - What you were trying to do
-   - What you've already tried
-   - Relevant code snippets
+    - Exact error message
+    - What you were trying to do
+    - What you've already tried
+    - Relevant code snippets
 
 ---
 
