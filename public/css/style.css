@@ -41,9 +41,50 @@ table,
 th,
 td {
     border: 1px solid black;
+    border-collapse: collapse;
 }
 
-.container {
+.table {
+    margin: 1rem;
+}
+.table-name {
+    margin-bottom: 1rem;
+}
+.table-table {
+    text-align: center;
+}
+.table-header {
+    font-size: 15px;
+    background-color: #68646e;
+    color: white;
+}
+.table-row1,
+.table-row2 {
+    height: 4rem;
+    font-size: 14px;
+}
+.table-row1 {
+    background-color: #e8cfec;
+}
+.table-row2 {
+    background-color: #c5afcf;
+}
+.table-column1 {
+    width: 4rem;
+}
+.table-column2 {
+    width: 8rem;
+}
+.table-label {
+    font-weight: bold;
+}
+
+.container-quiz {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-hub {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 1rem;
