@@ -8,13 +8,21 @@
             http-equiv="Content-Security-Policy"
             content="script-src 'self';"
         />
-        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/upgradequiz.css" />
         <title>The Bloons Hub - Upgrade Quiz</title>
         <link rel="manifest" href="../json/manifest.json" />
         <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
     </head>
     <body>
-        <div class="container-quiz"></div>
-        <script src="../js/quizapp.js"></script>
+        <main>
+            <nav>
+                <h1 id="title">THE UPGRADE QUIZ</h1>
+                <h3>Can you name every upgrade?</h3>
+            </nav>
+            <p>Enter here:</p>
+            <textarea id="input" name="input" rows="1" cols="50">.</textarea>
+            <div class="container-quiz"></div>
+            <script src="../js/quizapp.js"></script>
+        </main>
     </body>
 </html>

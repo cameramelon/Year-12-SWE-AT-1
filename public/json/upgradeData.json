@@ -117,7 +117,7 @@
 "uxx3":"MOAB Glue",
 "uxx4":"Relentless Glue",
 "uxx5":"Super Glue",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":7,
@@ -137,7 +137,7 @@
 "uxx3":"Enforcer",
 "uxx4":"Avenger",
 "uxx5":"Desert Phantom",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":8,
@@ -237,7 +237,7 @@
 "uxx3":"MOAB Shove",
 "uxx4":"Comanche Defense",
 "uxx5":"Comanche Commander",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":13,
@@ -257,7 +257,7 @@
 "uxx3":"Signal Flare",
 "uxx4":"Shattering Shells",
 "uxx5":"Blooncineration",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":14,
@@ -277,7 +277,7 @@
 "uxx3":"Buckshot",
 "uxx4":"Bloon Area Denial System",
 "uxx5":"Bloon Exclusion Zone",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":15,
@@ -317,7 +317,7 @@
 "uxx3":"Dark Knight",
 "uxx4":"Dark Champion",
 "uxx5":"Legend of the Night",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":17,
@@ -357,7 +357,7 @@
 "uxx3":"Lead to Gold",
 "uxx4":"Rubber to Gold",
 "uxx5":"Bloon Master Alchemist",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":19,
@@ -397,7 +397,7 @@
 "uxx3":"Alluring Melody",
 "uxx4":"Symphonic Resonance",
 "uxx5":"The Final Harmonic",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":21,
@@ -417,7 +417,7 @@
 "uxx3":"Coldchain",
 "uxx4":"Frozen Verdict",
 "uxx5":"Winter's Mercy",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":22,
@@ -437,7 +437,7 @@
 "uxx3":"Monkey Town",
 "uxx4":"Monkey City",
 "uxx5":"Monkeyopolis",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":23,
@@ -457,7 +457,7 @@
 "uxx3":"Marketplace",
 "uxx4":"Central Market",
 "uxx5":"Monkey Wall Street",
-"Paragon":""
+"Paragon":"-"
 },
 {
 "id":24,
@@ -517,6 +517,6 @@
 "uxx3":"Golden Eagle",
 "uxx4":"Giant Condor",
 "uxx5":"Pouakai",
-"Paragon":""
+"Paragon":"-"
 }
 ]

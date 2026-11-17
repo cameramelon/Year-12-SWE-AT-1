@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fdfdfd;
+    font-family: "Quantico", sans-serif;
+    font-size: 1rem;
+
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav h1,
+nav h3 {
+    color: #68646e;
+    text-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+nav h1 {
+    padding-top: 1rem;
+}
+
+nav h3 {
+    padding-bottom: 3rem;
+}
+
+textarea {
+    font-family: "Quantico", sans-serif;
+    background: #e5dce3;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 25px;
+    align-content: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    background: #fdf1ff;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.table-name {
+    margin-bottom: 1rem;
+}
+.table-table {
+    text-align: center;
+}
+.table-header {
+    font-size: 15px;
+    background-color: #68646e;
+    color: white;
+}
+.table-row1,
+.table-row2 {
+    height: 4rem;
+    font-size: 14px;
+}
+.table-row1 {
+    background-color: #e8cfec;
+}
+.table-row2 {
+    background-color: #c5afcf;
+}
+.table-column1 {
+    width: 4rem;
+}
+.table-column2 {
+    width: 8rem;
+}
+.table-label {
+    font-weight: bold;
+}
+
+.container-quiz {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    max-width: 60rem;
+    grid-gap: 1rem;
+    margin: auto;
+    padding: 1rem 0;
+}
