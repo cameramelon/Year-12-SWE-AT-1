@@ -48,14 +48,24 @@ if ("serviceWorker" in navigator) {
 
 // actual code starts here :)
 const dict = {1: [""], 2: [""], 3: [""], 4: [""], 5: [""], 6: [""], 7: [""], 8: [""], 9: [""], 10: [""], 11: [""], 12: [""], 13: [""], 14: [""], 15: [""], 16: [""], 17: [""], 18: [""], 19: [""], 20: [""], 21: [""], 22: [""], 23: [""], 24: [""], 25: [""], 26: [""],};
+let time = 0;
+let count = 0;
+let timer;
+
+let target = 404;
+
 
 function func() {
     const textInput = document.getElementById("input");
-    const title = document.getElementById("title");
+    const timerText = document.getElementById("timer");
+    const countText = document.getElementById("count");
+
+    timerText.innerHTML = `Time: ${timeFormat(time)}`;
+    countText.innerHTML = `Count: ${count}/${target}`;
 
     Object.values(dict).forEach((value, index) => {
         value.forEach((upgradename) => {
-            if (textInput.value === upgradename && textInput.value != "") {
+            if (textInput.value.replace(/[^a-zA-Z0-9]/g, "").toUpperCase() === upgradename.replace(/[^a-zA-Z0-9]/g, "").toUpperCase() && textInput.value != "") {
                 tablebox = document.getElementById(index + 1 + "-" + value.indexOf(upgradename),);
 
                 if (tablebox.innerHTML != "") {
@@ -63,14 +73,46 @@ function func() {
                 }
 
                 textInput.value = "";
-                console.log(index + 1 + "-" + value.indexOf(upgradename));
                 tablebox.innerHTML = upgradename;
 
                 tablebox.classList.add("glow");
                 setTimeout(() => {tablebox.classList.remove("glow");}, 250);
+
+                count += 1;
             }
         });
     });
+
+    if (count >= target) {
+        const winscreen = document.getElementById("winscreen");
+        const finalTimeText = document.getElementById("finalTimer");
+        const upgradeTimeText = document.getElementById("upgradeTime");
+
+        winscreen.style = "visibility: visible; transition: 0.4s;"
+
+        finalTimeText.innerHTML = `Final Time: ${timeFormat(time)}`;
+        upgradeTimeText.innerHTML = `Time: ${timeFormat(time / target)}/upgrade`;
+    }
 }
 
+function timeFormat(time) {
+    let seconds = Math.floor(time % 60);
+    let minutes = Math.floor((time % 3600) / 60);
+    let hours = Math.floor(time / 3600);
+
+    if (hours >= 1) {
+        return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+    else {
+        return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+}
+
+
 const intervalId = setInterval(func, 1);
+
+setInterval(() => {
+    if (count < target) {
+        time += 1;
+    }
+}, 1000);

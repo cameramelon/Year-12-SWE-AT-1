@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fdfdfd;
+    font-family: "Quantico", sans-serif;
+    font-size: 1rem;
+
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav h1 {
+    color: #68646e;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+}
