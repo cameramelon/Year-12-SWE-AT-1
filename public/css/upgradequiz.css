@@ -41,7 +41,7 @@ nav h1 {
 }
 
 nav h3 {
-    padding-bottom: 3rem;
+    padding-bottom: 9rem;
 }
 
 textarea {
@@ -51,6 +51,41 @@ textarea {
     border-radius: 4px;
     height: 25px;
     align-content: center;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.textbox {
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8rem;
+
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+    background: #efe6ec;
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+td {
+    transition:
+        box-shadow 0.5s ease-out,
+        background-color 0.5s ease-out;
+}
+
+td.glow {
+    background: #00ffff;
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 25px rgba(0, 255, 255, 0.6);
+
+    transition: none;
 }
 
 table,
