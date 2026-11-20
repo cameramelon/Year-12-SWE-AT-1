@@ -61,3 +61,101 @@ CREATE TABLE upgrades(
     INSERT INTO upgrades(id, monkeyname, "u1xx", "u2xx", "u3xx", "u4xx", "u5xx", "ux1x", "ux2x", "ux3x", "ux4x", "ux5x", "uxx1", "uxx2", "uxx3", "uxx4", "uxx5", "Paragon") VALUES (24, "Spike Factory", "Bigger Stacks", "White Hot Spikes", "Spiked Balls", "Spiked Mines", "Super Mines", "Faster Production", "Even Faster Production", "MOAB Shredr", "Spike Storm", "Carpet of Spikes", "Long Reach", "Smart Spikes", "Long Life Spikes", "Deadly Spikes", "Perma-Spike", "Mega Massive Munitions Factory");
     INSERT INTO upgrades(id, monkeyname, "u1xx", "u2xx", "u3xx", "u4xx", "u5xx", "ux1x", "ux2x", "ux3x", "ux4x", "ux5x", "uxx1", "uxx2", "uxx3", "uxx4", "uxx5", "Paragon") VALUES (25, "Engineer Monkey", "Sentry Gun", "Faster Engineering", "Sprockets", "Sentry Expert", "Sentry Champion", "Larger Service Area", "Deconstruction", "Cleansing Foam", "Overclock", "Ultraboost", "Oversize Nails", "Pin", "Double Gun", "Bloon Trap", "XXXL Trap", "Master Builder");
     INSERT INTO upgrades(id, monkeyname, "u1xx", "u2xx", "u3xx", "u4xx", "u5xx", "ux1x", "ux2x", "ux3x", "ux4x", "ux5x", "uxx1", "uxx2", "uxx3", "uxx4", "uxx5", "Paragon") VALUES (26, "Beast Handler", "Piranha", "Barracuda", "Great White", "Orca", "Megalodon", "Microraptor", "Adasaurus", "Velociraptor", "Tyrannosaurus Rex", "Giganotosaurus", "Gyrfalcon", "Horned Owl", "Golden Eagle", "Giant Condor", "Pouakai", "");
+
+
+-- data for bloondle (rounds) (100 different rounds I have to populate YIPPEE!!!!!!)
+DROP TABLE bloondlerounds();
+CREATE TABLE bloondlerounds(
+    id INTEGER NOT NULL PRIMARY KEY,
+    hint1 TEXT NOT NULL,
+    hint2 INTEGER NOT NULL,
+    hint3 INTEGER NOT NULL,
+    hint4 INTEGER NOT NULL,
+    hint5 TEXT NOT NULL
+);
+
+-- Hint 1: description of bloons present, Hint 2: RBE, Hint 3: time round lasts, Hint 4: how much you will have by then, Hint 5: literally just what is in the round
+-- Excludes rounds with a single bloon (40, 60, 80, 100 etc.)
+
+-- 1: bloons present, 2: time, 3: RBE, 4: cash, 5: numbers
+
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (21, "Yellow,Pink", 18.12, 230, 4133, "40,18");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (22, "White", 8, 176, 4484, "16");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (23, "White,Black", 6.82, 154, 4782, "7,7");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (24, "Camo Green,Blue", 9, 43, 5059, "1,20");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (25, "Regrow Yellow,Purple", 21.14, 210, 5226, "25,10");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (26, "Pink,Zebra", 14.51, 207, 5561, "23,4");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (27, "Red,Blue,Green,Yellow", 34.26, 535, 5894, "100,60,45,45");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (28, "Lead", 5, 138, 6556, "6");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (29, "Yellow,Regrow Yellow", 15.25, 260, 6822, "50,15");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (30, "Lead", 13.07, 207, 7211, "9");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (31, "Black,White,Zebra,Regrow Zebra", 15.91, 406, 7548, "8,8,8,2");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (32, "Black,White,Purple", 27.96, 495, 8085, "15,20,10");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (33, "Camo Red,Camo Yellow", 25.34, 72, 8712, "20,13");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (34, "Yellow,Zebra", 36, 778, 8917, "160,6");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (35, "White,Rainbow,Pink,Black", 33.76, 1015, 9829, "25,5,35,30");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (36, "Pink,Camo Regrow Green,Pink,Camo Regrow Green,Pink", 20.99, 760, 10979, "40,10,40,10,60");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (37, "Black,White,Lead,Zebra,Camo White", 43.51, 1202, 11875, "25,25,15,10,7");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (38, "White,Pink,Lead,Zebra,Ceramic", 29.06, 1157, 13214, "17,42,14,10,2");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (39, "Black,White,Zebra,Rainbow,Regrow Rainbow", 37.93, 1620, 14491, "10,10,20,18,2");
+--INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (40, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (41, "Black,Zebra", 46.2, 2040, 16771, "60,60");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (42, "Regrow Rainbow,Camo Rainbow", 11.6, 517, 18952, "6,5");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (43, "Rainbow, Ceramic", 9.26, 1198, 19611, "10,7");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (44, "Zebra,Zebra,Zebra,Zebra,Zebra" 23.67, 1150, 20899, "10,10,10,10,10");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (45, "Rainbow,Camo Purple,Pink,Fortified Lead", 53.1, 2289, 22183, "25,10,180,4");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (46, "Fortified Ceramic", 7, 684, 24605, "6");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (47, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (48, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (49, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (50, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (51, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (52, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (53, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (54, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (55, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (56, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (57, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (58, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (59, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (60, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (61, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (62, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (63, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (64, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (65, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (66, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (67, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (68, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (69, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (70, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (71, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (72, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (73, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (74, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (75, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (76, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (77, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (78, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (79, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (80, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (81, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (82, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (83, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (84, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (85, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (86, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (87, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (88, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (89, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (90, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (91, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (92, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (93, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (94, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (95, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (96, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (97, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (98, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (99, );
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (100, );
