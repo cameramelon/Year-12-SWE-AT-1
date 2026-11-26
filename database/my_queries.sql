@@ -128,7 +128,7 @@ INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (66, "M
 INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (67, "MOAB,Regrow Camo Fortified Ceramic,MOAB", 26.44, 6410, 64769, "4,13,4");
 INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (68, "MOAB,BFB", 7.94, 5628, 65792.6, "4,1");
 INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (69, "Fortified Lead,Regrow Black,Ceramic", 42.13, 6680, 66570.4, "40,40,50");
-INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (70, "Camo Regrow White,Rainbow,MOAB,Ceramic", 41.14, 13184, 67961.4, "120,200,4");
+INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (70, "Camo Regrow White,Rainbow,MOAB", 41.14, 13184, 67961.4, "120,200,4");
 INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (71, "Ceramic,MOAB", 16.55, 9280, 70580.2, "30,10");
 INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (72, "Regrow Ceramic,BFB,BFB", 21.7, 10280, 72083.2, "38,1,1");
 INSERT INTO bloondlerounds(id, hint1, hint2, hint3, hint4, hint5) VALUES (73, "MOAB,BFB,MOAB", 26.67, 11256, 73587.2, "7,2,1");
