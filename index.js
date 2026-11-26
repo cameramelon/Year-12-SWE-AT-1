@@ -107,6 +107,48 @@ db.all("SELECT * FROM upgrades", function (err, rows) {
     );
 });
 
+let myString3 = "[\n";
+db.all("SELECT * FROM bloondlerounds", function (err, rows) {
+    let myCounter = 0;
+    rows.forEach(function (row) {
+        // for debugging
+        // console.log(row.extID + ": " + row.name + ": " + row.hyperlink + ": " + row.about + ": " + row.image + ": " + row.language);
+        myString3 =
+            myString3 +
+            '{\n"id":' +
+            row.id +
+            ',\n"hint1":"' +
+            row.hint1 +
+            '",\n"hint2":"' +
+            row.hint2 +
+            '",\n"hint3":"' +
+            row.hint3 +
+            '",\n"hint4":"' +
+            row.hint4 +
+            '",\n"hint5":"' +
+            row.hint5;
+        myCounter++;
+        if (myCounter == rows.length) {
+            myString3 = myString3 + '"\n}\n';
+        } else {
+            myString3 = myString3 + '"\n},\n';
+        }
+    });
+
+    // console.log(myString);
+    var fs = require("fs");
+    fs.writeFile(
+        "public/json/bloondleData.json",
+        myString3 + "]",
+        function (err) {
+            if (err) {
+                console.log(err);
+            }
+        },
+    );
+});
+
+
 const spawn = require("child_process").spawn;
 // you can add arguments with spawn('python',["path/to/script.py", arg1, arg2, ...])
 const pythonProcess = spawn("python", ["database_manager.py"]);
@@ -121,8 +163,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "public/html/home.html"));
 });
-app.listen(5000, () =>
+app.listen(8888, () =>
     console.log(
-        "Server is running on Port 5000, visit http://localhost:5000/ or http://127.0.0.1:5000 to access your website",
+        "Server is running on Port 8888, visit http://localhost:8888/ or http://127.0.0.1:8888 to access your website",
     ),
 );

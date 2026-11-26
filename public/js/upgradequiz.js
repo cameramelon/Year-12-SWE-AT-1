@@ -52,7 +52,7 @@ let time = 0;
 let count = 0;
 let timer;
 
-let target = 1;
+let target = 404;
 
 
 function func() {
