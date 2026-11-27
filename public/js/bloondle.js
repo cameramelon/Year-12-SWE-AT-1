@@ -32,6 +32,8 @@ if ("serviceWorker" in navigator) {
 const round = getRandomInt(21, 99);
 console.log(round);
 
+let hintcount = 0;
+
 
 function revealHint(id) {
     const hint1 = document.getElementById("hint1");
@@ -94,6 +96,8 @@ function revealHint(id) {
             }
         });
     }
+
+    hintcount += 1;
 }
 
 const button1 = document.getElementById("button1");
@@ -101,6 +105,19 @@ const button2 = document.getElementById("button2");
 const button3 = document.getElementById("button3");
 const button4 = document.getElementById("button4");
 const button5 = document.getElementById("button5");
+
+const buttons = [button1, button2, button3, button4, button5];
+
+function func() {
+    buttons.forEach((button) => {
+        if (buttons.indexOf(button) == hintcount) {
+            button.style = "visibility: visible;";
+        }
+        else {
+            button.style = "visibility: hidden;";
+        }
+    })
+}
 
 button1.addEventListener('click', () => {
     revealHint(1);
@@ -125,3 +142,5 @@ button5.addEventListener('click', () => {
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+const intervalId = setInterval(func, 1);
